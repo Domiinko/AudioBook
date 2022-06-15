@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+   .containerik{
+     position: relative;
+     display: flex;
+     max-width: 1200px;
+     left: 19%;
+     width: 100%;
+     flex-wrap: wrap;
+     justify-content: center;
+     background: rgba(36, 34, 34, 0.185);
+     z-index: 5;
+
+   }
+   img{
+     width: 300px;
+     object-fit: cover;
+     object-position: bottom;
+     padding: 10px;
+
+   }
+   .albums .imgBox img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+   }
+   .albums .imgBox:hover img{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+   }

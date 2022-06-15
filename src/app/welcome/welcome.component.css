@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+  bottom:15%;
+  height:  30px;
+  width: 30px;
+  color: blue;
+  z-index:1;
+}
+
+h1.title{
+  position:absolute;
+  right: 0;
+  width: 100%;
+  min-height: 90vh;
+  text-align: center;
+  bottom: 0%;
+  font-size: 50px;
+
+  color: rgb(145, 47, 145);
+  z-index: 2;
+
+  /*background: -webkit-linear-gradient(#eee, rgb(118, 33, 139));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+
+}
+h2.subtitle{
+  position:absolute;
+  text-align: center;
+  min-height: 83vh;
+  right: 0;
+  width: 100%;
+  bottom: 0%;
+  color: rgb(145, 47, 145);
+  z-index: 2;
+
+/*
+  background: -webkit-linear-gradient(#eee, rgb(118, 33, 139));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/
+
+}

@@ -1,16 +1,37 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes, RouterModule } from '@angular/router'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavComponent } from './nav/nav.component';
+import { PlayerComponent } from './player/player.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AlbumsComponent } from './albums/albums.component';
+import { SongsComponent } from './songs/songs.component';
+import { from } from 'rxjs';
+import { ShearchComponent } from './shearch/shearch.component';
+import { Playlist1Component } from './playlist1/playlist1.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    PlayerComponent,
+    WelcomeComponent,
+    AlbumsComponent,
+    SongsComponent,
+    ShearchComponent,
+    Playlist1Component,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    //RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

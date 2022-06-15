@@ -1,0 +1,45 @@
+
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          }
+
+           .containerik{
+             position: relative;
+             display: flex;
+             max-width: 1400px;
+             left: 19%;
+             width: 100%;
+             flex-wrap: wrap;
+             justify-content: center;
+             background: rgba(36, 34, 34, 0.185);
+             z-index: 5;
+             top: 60px;
+             padding: 4%;
+
+           }
+           img{
+             width: 300px;
+             object-fit: cover;
+             object-position: bottom;
+             padding: 10px;
+           }
+
+
+  .player{
+    z-index: 3;
+    height: 410px;
+    background: #f1f3f4;
+    box-shadow: 0 50px 80px rgba(0,0,0,0.25);
+
+  }
+
+
+p{
+ font-size: 25px;
+ text-align: center;
+ font-style: oblique;
+}
+
