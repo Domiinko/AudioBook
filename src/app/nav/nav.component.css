@@ -35,7 +35,18 @@
   color: white;
 }
 
-img{
-  float: right;
-  width:10%;
-}
+.txt1{
+  font-size: 25px;
+  text-align: right;
+  font-style: oblique;
+  color: silver;
+  padding-right: 1%;
+ }
+ .txt2{
+  font-size: 15px;
+  text-align: right;
+  font-style: oblique;
+  color: whitesmoke;
+  padding-right: 2.4%;
+ }
+

@@ -1,21 +1,10 @@
 <p>shearch works!</p>
-<h1>Tabulka z json Servera</h1>
-<hr>
-<table>
-  <tr>
-    <th>
+  <div class="row">
+    <div class="search-hero">
+      <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search by hero, id">
 
-    </th>
-  </tr>
-  <tr>
-    <th>
+    </div>
 
-    </th>
-  </tr>
-  <tr>
-    <th>
-
-    </th>
-  </tr>
-</table>
+    <div *ngFor="let song of songs | filter:searchText"></div>
+  </div>
 

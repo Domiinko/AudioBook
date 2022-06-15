@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router'
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -14,6 +14,7 @@ import { ShearchComponent } from './shearch/shearch.component';
 import { Playlist1Component } from './playlist1/playlist1.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './gallery/gallery.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -25,12 +26,15 @@ import { GalleryComponent } from './gallery/gallery.component';
     SongsComponent,
     ShearchComponent,
     Playlist1Component,
-    GalleryComponent
+    GalleryComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    Ng2SearchPipeModule
     //RouterModule.forRoot(appRoutes)
   ],
   providers: [],

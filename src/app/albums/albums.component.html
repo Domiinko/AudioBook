@@ -1,13 +1,37 @@
 
 <div class="containerik">
   <div *ngFor="let song of songs">
+    <br>
   <div class="albums">
     <div class="imgBox">
-      <a routerLink="/Playlist1" routerLinkActive="active"><img src="{{ song.picUrl }}" alt="" height="450px"></a>
+      <a routerLink="/Playlist1" routerLinkActive="active"><img src="{{ song.picUrl }}" alt="" ></a>
+
     </div>
+    <p>{{song.alt}}</p>
   </div>
   </div>
-  <!--
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
   <div class="albums">
     <div class="imgBox">
       <a routerLink="/Songs" routerLinkActive="active"><img src="../../assets/Zyzz.jpg" alt="zyzz"></a>
@@ -44,7 +68,7 @@
     </div>
   </div>
   -->
-</div>
+
 
 
 

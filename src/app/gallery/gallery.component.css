@@ -12,7 +12,7 @@
      width: 100%;
      flex-wrap: wrap;
      justify-content: center;
-     background: rgba(36, 34, 34, 0.185);
+     background: rgba(36, 34, 34, 0.055);
      z-index: 5;
 
    }

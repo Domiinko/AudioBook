@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../Service/api.service';
+import { Songss } from '../Songss';
 
 @Component({
   selector: 'app-shearch',
@@ -6,20 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shearch.component.css']
 })
 export class ShearchComponent implements OnInit {
-  list = [
-    {  "id": 1,  },
-    {  "id": 2,  },
-    {  "id": 3,  },
-    {  "id": 4,  },
-    {  "id": 5,  },
-    {  "id": 6,  },
-    {  "id": 7,  },
-    {  "id": 8,  }
-  ]
+  searchText:any;
 
-  constructor() { }
+  constructor(private api : ApiService){}
 
-  ngOnInit(): void {
-  }
+    songs : Songss[] = [];
+
+     ngOnInit(): void {
+      this.api.getSongss().subscribe
+      (
+        (response)=>
+        {
+          this.songs = response;
+        }
+      )
+    }
 
 }
