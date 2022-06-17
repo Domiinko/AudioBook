@@ -1,23 +1,24 @@
 <div class="containerik">
-
+  <div *ngFor="let song of songs">
   <div class="player">
     <div class="imgBox">
-      <img src="../../assets/taylor.jpg" alt="Blank Space">
-    </div>
-    <p>Blank Space</p>
+      <img src="c">
+      <p>{{ song.alt }}</p>
     <audio controls>
-      <source src="../../assets/Blank Space.mp3" type="audio/mp3">
+      <source src="{{  song.audio }}" type="audio/mp3">
     </audio>
   </div>
-
-
+  </div>
+  </div>
+</div>
+<!--
   <div class="player">
     <div class="imgBox">
       <img src="../../assets/taylor.jpg" alt="Blank Space">
     </div>
     <p>Cardigan</p>
     <audio controls>
-      <source src="../../assets/cardigan.mp3" type="audio/mp3">
+      <source src="../../assets/audio/cardigan.mp3" type="audio/mp3">
     </audio>
   </div>
 
@@ -28,8 +29,9 @@
     </div>
     <p>August</p>
     <audio controls>
-      <source src="../../assets/august.mp3" type="audio/mp3">
+      <source src="https://www.youtube.com/watch?v=3kIbmg68X8o&ab_channel=Teddy-Topic" type="audio/mp3">
     </audio>
   </div>
 
 </div>
+-->

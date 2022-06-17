@@ -1,0 +1,56 @@
+tbody{
+  width: 900px;
+}
+table{
+  width:1900px;
+
+  border-collapse: collapse;
+  background-color: #f1f3f4;
+  border-color: blanchedalmond;
+  align-items: center;
+
+}
+table, td, th {
+
+  text-align: center;
+  padding: 5pxs;
+}
+td {
+  border: 5px solid;
+  border-color: blanchedalmond
+}
+th{
+height: 30px;
+}
+tr{
+  align-items: center;
+}
+
+
+.search-hero{
+  text-align: center;
+}
+p{
+  font-size: 25px;
+  text-align: center;
+  font-style: oblique;
+  color: rgb(211, 137, 26);
+}
+
+.vstup{
+  height: 40px;
+  width: 400px;
+  background-color: #f1f3f4;
+  border-radius: 15px;
+  border-color: blanchedalmond;
+}
+img{
+  text-align: center;
+
+}
+.scroll{
+overflow: scroll;
+height:400px;
+width: 100%;
+position: relative;
+}

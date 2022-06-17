@@ -1,10 +1,33 @@
-<p>shearch works!</p>
+<p>Search Song</p>
   <div class="row">
     <div class="search-hero">
-      <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search by hero, id">
-
+      <input class="vstup" type="text" name="search" [(ngModel)]="searchText" placeholder="Iterpret">
     </div>
+    <br>
 
-    <div *ngFor="let song of songs | filter:searchText"></div>
+
+
+
   </div>
+  <tbody>
+<div class="scroll">
+<table>
 
+  <tr>
+    <th>Obrázok</th>
+    <th>Interpret</th>
+    <th>názov skladby</th>
+  </tr>
+  <ng-container *ngFor="let song of songs | filter:searchText">
+  <tr>
+    <td><img src="{{ song.picUrl }}" alt="" height="50px" width="40"></td>
+    <td><div class="active">{{ song.alt }}</div></td>
+    <td><div class="active">{{ song.alt }}</div></td>
+
+  </tr>
+
+</ng-container>
+
+</table>
+</div>
+</tbody>

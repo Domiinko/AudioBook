@@ -1,0 +1,22 @@
+{
+  "Taylor" : [
+    {
+      "id" : "1",
+      "picUrl" : "https://m.media-amazon.com/images/I/81Ii6u2neLL._SX425_.jpg",
+      "alt" : "Blank Space",
+      "audio" : "./src/assets/audio/Taylor_swift/Blank Space.mp3"
+    },
+    {
+      "id" : "2",
+      "picUrl" : "https://m.media-amazon.com/images/I/81Ii6u2neLL._SX425_.jpg",
+      "alt" : "Cardigan",
+      "audio" : "./src/assets/audio/Taylor_swift/cardigan.mp3"
+    },
+    {
+      "id" : "3",
+      "picUrl" : "https://m.media-amazon.com/images/I/81Ii6u2neLL._SX425_.jpg",
+      "alt" : "August",
+      "audio" : "./src/assets/audio/Taylor_swift/august.mp3"
+    }
+  ]
+}
